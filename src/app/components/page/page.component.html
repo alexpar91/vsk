@@ -1,0 +1,444 @@
+<div class="wrapper">
+
+
+    <header class="header">
+        <div class="header__container">
+            <a href="/" class="header__logoVSK">
+                <img [src]="imageLogoVSK">
+            </a>
+            <div class="header__actions">
+                <a href="tel:88007754774" class="header__actions-phone">8-800-775-4774</a>
+                <div class="header__actions-subtitle">круглосуточно</div>
+            </div>
+            <a href="https://europlan.ru/" class="header__logoEuroplan">
+                <img [src]="imageLogoEuroplan">
+            </a>
+        </div>
+    </header>
+
+
+
+
+
+
+
+
+    <main class="page">
+        
+
+
+
+
+        <div class="main__container">
+
+            <div class="page__registration registration">
+                <div class="registration__containers">
+                    <h3>Регистрация</h3>
+
+                    <div class="registration__body">
+
+
+                        <div class="registration__column">
+                            <div class="registration__item item-registration-form">
+                                <div class="item__registration-form">
+                                    <form  class="form">
+                                        <label>Телефон</label>
+                                        <input type="text" id="option" placeholder="+7 (___) ___-__-__" class="form-control">
+                                    </form>
+                                </div>
+                                <div class="item__registration-form" id="item__registration-form">
+                                    <form  class="form">
+                                        <label>Код партнёра</label>
+                                        <input type="text" id="option" placeholder="SECRETVSK" class="form-control">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>   
+                        
+                        <div class="registration__column">
+                            <div class="registration__item item-registration-form-politics">
+                                <div class="item__registration-form">
+                                    <form class="form-approval" id="form-approval">
+                                        <input type="checkbox" id="politics" onclick="check();" value="" autocomplete="off"/>
+                                        <label>Я подтверждаю, что даю согласие на обработку персональных данных</label>
+                                    </form>
+                                </div>
+                                <div class="item__registration-form">
+                                    <form class="form-approval">
+                                        <input type="checkbox" id="politics" onclick="check();" value="" autocomplete="off"/>
+                                        <label>Даю согласие на получение информационных материалов</label>
+                                    </form>
+                                </div>
+                            </div>
+                        </div> 
+
+                        <div class="registration__column">
+                            <div class="registration__item item-registration">
+                                <button type="submit" class="btn">Зарегистрироваться</button>
+                            </div>
+                        </div> 
+                        
+                    </div>
+
+
+                     
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+        <div class="main__container">
+
+            <div class="page__curator curator">
+                <div class="curator__containers">
+                    <h3>Ваш куратор</h3>
+                    <div class="curator__contacts">
+                        <h4>Константинопольский Константин Константинович</h4>
+                        <a href="tel:+7 999 999 99 99" class="curator__contact-phone">+7 999 999 99 99</a>
+                        <a href="mailto:konstantinopolsky@vsk.ru" class="curator__contact-mail">konstantinopolsky@vsk.ru</a>
+                    </div>  
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="main__container">
+
+            <div class="page__downloadmobile downloadmobile">
+                <div class="downloadmobile__containers">
+
+                    <div class="downloadmobile__body">
+
+                        <div class="downloadmobile__column">
+
+                            <div class="downloadmobile__item item-downloadmobile">
+                                <div class="item-downloadmobile__text">
+                                    <h3>Скачайте мобильное приложение ВСК</h3>
+                                </div> 
+                                <div class="item-downloadmobile__title">
+                                    <p>Регистрация также доступна в нашем мобильном приложении.
+                                    Не забудьте указать ваш код партнёра <b>SECRETVSK</b></p>
+                                </div> 
+                            </div>
+                            
+                        </div>
+
+                        
+                        <div class="downloadmobile__column">
+                            <div class="downloadmobile__item item-downloadmobile-store">
+                                <div class="item-downloadmobile__store">
+                                    <button type="submit" class="btn btn-app-store">
+                                        
+                                        <img [src]="imageAppstore" alt="AppStore">
+
+                                    </button>
+                                    <button type="submit" class="btn btn-play-google">
+                                        
+                                        <img [src]="imageGooglePlay" alt="GooglePlay">
+                                        <img [src]="imagelogoGooglePlay" alt="GooglePlay">
+
+                                    </button>
+                                </div>
+                                <div class="item-downloadmobile__qd">
+                                    <img [src]="imageQr">
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+                    </div>
+
+                 
+
+                </div>
+
+            </div>
+  
+        </div>
+
+
+
+
+        <div class="main__container">
+
+        <div class="page__discounts discounts">
+
+            
+            <div class="discounts__containers">
+                <h3>Скидки только для своих</h3> 
+                <div class="discounts__body">
+                    <div class="discount__column">
+                        <div class="discount__item item-discount">
+                            <div class="item-discount__text">
+                                <div class="item-discount__title">Каско</div>
+                                <div class="item-discount__value">– 30 %</div>
+                            </div>    
+                            <div class="item-discount__icon">
+                                <img [src]="imageBonusKasko">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="discount__column">
+                        <div class="discount__item item-discount">
+                            <div class="item-discount__text">
+                                <div class="item-discount__title">Имущество</div>
+                                <div class="item-discount__value">– 20 %</div>
+                            </div>    
+                            <div class="item-discount__icon">
+                                <img [src]="imgBonusProperty">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="discount__column">
+                        <div class="discount__item item-discount">
+                            <div class="item-discount__text">
+                                <div class="item-discount__title">Путешествия</div>
+                                <div class="item-discount__value">– 20 %</div>
+                            </div>
+                            <div class="item-discount__icon">
+                                <img [src]="imgBonusVacancy">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="discount__column" (click)="tools=!tools" [class.tools]="!tools">
+                        <div class="discount__item item-discount">
+                            <div class="item-discount__text">
+                                <div class="item-discount__title">Здоровье</div>
+                                <div class="item-discount__value">– 30 %</div>
+                            </div>
+                            <div class="item-discount__icon">
+                                <img [src]="image3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="discount__column">
+                        <div class="discount__item item-discount">
+                            <div class="item-discount__text">
+                                <div class="item-discount__title">Личный <br> кабинет по ДМС</div>
+                            </div>
+                            <div class="item-discount__icon">
+                                <img [src]="imageDMS">
+                            </div>
+                        </div>
+                    </div>
+
+               
+                    <div class="discount__column" >
+                        <div class="discount__item item-discount">
+                            <div class="item-discount__text">
+                                <div class="item-discount__title">ОСАГО</div>
+                            </div>
+                            <div class="item-discount__icon">
+                                <img [src]="image1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="discount__column">
+                        <div class="discount__item item-discount">
+                            <div class="item-discount__text">
+                                <div class="item-discount__title">Ипотека</div>
+                            </div>   
+                            <div class="item-discount__icon">
+                                <img [src]="IMG">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="discount__column">
+                        <div class="discount__item item-discount">
+                            <div class="item-discount__text">
+                                <div class="item-discount__title">Телемедицина</div>
+                                <div class="item-discount__value">– 20 %</div>
+                            </div>
+                            <div class="item-discount__icon">
+                                <img [src]="imgBonusHealth3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="discount__column">
+                        <div class="discount__item item-discount">
+                            <div class="item-discount__text">
+                                <div class="item-discount__title">Медицина <br> без границ</div>
+                                <div class="item-discount__value">– 20 %</div>
+                            </div>
+                            <div class="item-discount__icon">
+                                <img [src]="imgBonusHealth1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="discount__column">
+                        <div class="discount__item item-discount">
+                            <div class="item-discount__text">
+                                <div class="item-discount__title">Предложения <br> от партнёров</div>
+                            </div>
+                            <div class="item-discount__icon">
+                                <img [src]="imageFrame">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            
+
+
+        </div>
+
+        </div>
+
+    
+
+        <div class="main__container">
+
+
+            <div class="page__features features">
+                <div class="features__containers">
+                    <h3>Преимущества</h3>
+                    <ul>
+                        <li *ngFor="let feature of features"><span>{{feature}}</span></li>
+                    </ul>   
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+    <hr>
+
+    <footer class="footer">
+    
+        <div class="footer__container">
+
+            <div class="row">
+
+
+                <div class="footer__links-block col-xl-6 col-sm-12">
+
+                    <div class="row">
+
+                        <div class="col-md-6 navigate">
+                            <p class="mb-2 _500">ОФОРМИТЬ ПОЛИС</p>
+                            <ul class="two-columns-sm">
+                                <li><a href="#">Авто</a></li>
+                                <li><a href="#">Путешествия</a></li>
+                                <li><a href="#">Здоровье</a></li>
+                                <li><a href="#">Имущество</a></li>
+                                <li><a href="#">Активировать полис</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-6 contacts">
+                            <p class="mb-2 _500">ИНФОРМАЦИЯ</p>
+                            <ul class="two-columns-sm">
+                                <li><a href="https://www.vsk.ru/offices/" target="_blank" rel="noreferrer">Офисы продаж по РФ</a></li>
+                                <li><a href="https://www.vsk.ru/map/" target="_blank" rel="noreferrer">Карта сайта</a></li>
+                                <li><a href="https://www.vsk.ru/about/pravila_i_tarifi_strahovaniya/" target="_blank" rel="noreferrer">Правила и тарифы</a></li>
+                                <li><a href="https://www.vsk.ru/about/confidentiality_policy/" target="_blank" rel="noreferrer">Обработка персональных данных</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-xl-6 col-sm-12">
+
+                     <div class="row">
+                        <div class="col-xl-6 col-sm-12 col-md-6 address">
+                            <p class="mb-2 _500">ГОРЯЧАЯ ЛИНИЯ</p>
+                            <ul class="two-columns-sm">
+                                <li><a href="tel:+78007751575" class=" h5 _600">8 800 775-47-74</a></li>
+                                <li class="mb-0"><a href="https://www.vsk.ru/feedback/" target="_blank" class="footer__contact-us btn btn-outline _600 b-a">Получить консультацию</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-6 col-sm-12 col-md-6 store">
+                            <p class="mb-3 _500">МОБИЛЬНОЕ ПРИЛОЖЕНИЕ</p>
+                            <div class="item-downloadmobile__store item-downloadmobile__store-footer">
+                                <button type="submit" class="btn btn-app-store">
+                                    
+                                    <img [src]="imageAppstore" alt="AppStore">
+
+                                </button>
+                                <button type="submit" class="btn btn-play-google">
+                                    
+                                    <img [src]="imageGooglePlay" alt="GooglePlay">
+                                    <img [src]="imagelogoGooglePlay" alt="GooglePlay">
+
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row social">
+                        <div class="col-md-6">
+                            <p class="mb-2 _500">ПОДПИШИТЕСЬ НА НАС</p>
+                            <a href="https://t.me/vskinsur" target="_blank" rel="noreferrer" class="footer__social-link">
+                                <img [src]="imageF">
+                            </a>
+                            <a href="https://vk.com/vsk.insurance" target="_blank" rel="noreferrer" class="footer__social-link">
+                                <img [src]="imageVK">
+                            </a>
+                            <a href="https://zen.yandex.ru/vsk" target="_blank" rel="noreferrer" class="footer__social-link">
+                                <img [src]="imageYan">
+                            </a>
+                            <a href="https://www.youtube.com/user/vsktv" target="_blank" rel="noreferrer" class="footer__social-link">
+                                <img [src]="imageYoot">
+                            </a>
+                            <a href="https://ok.ru/vsk.insurance" target="_blank" rel="noreferrer" class="footer__social-link">
+                                <img [src]="imageInst">
+                            </a>
+                            <a href="https://ok.ru/vsk.insurance" target="_blank" rel="noreferrer" class="footer__social-link">
+                                <img [src]="imageOdn">
+                            </a>
+                        </div>
+                        <div class="col-md-6 footer__journal-block">
+                            <p class="mb-2 _500">ЖУРНАЛ ВСК</p>
+                            <a href="https://vskali.ru/" target="_blank" class="footer__journal">
+                                <img [src]="vskaliLogo">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+            <div class="row policy">
+                <div class="col-md-6">
+                    <p class="text-muted mb-2"><b style="text-decoration-line: underline;">Лицензия Банка России</b>&nbsp;от 11.09.2015: СЛ №0621, СИ №0621, ОС №0621, ОС №0621-04, ОС №0621-05, ПС №0621. Предложения о страховании по добровольным видам имущественного страхования не являются публичной офертой, решение о заключении договора страхования на конкретных условиях принимается только по соглашению сторон. Информация о видах и условиях страхования размещена в соответствии с требованиями пункта 6 статьи 6 Закона РФ от 27.11.1992 № 4015-1 «Об организации страхового дела в Российской Федерации».</p>
+                </div>
+                <div class="col-md-6">
+                    <p class="text-muted mb-2">Информацию, подлежащую раскрытию в соответствии с требованиями Федерального закона «О рынке ценных бумаг» (от 22.04.1996 N 39-ФЗ) и Положения о раскрытии информации эмитентами эмиссионных ценных бумаг (утв. Банком России 30.12.2014 N 454-П), САО «ВСК» раскрывает на&nbsp;<a href="http://www.e-disclosure.ru/portal/company.aspx?id=1968" target="_blank" rel="noreferrer" class="footer__interfax-link">странице в сети Интернет ООО «Интерфакс-ЦРКИ»</a>&nbsp;– информационного агентства, аккредитованного ЦБ РФ на раскрытие информации.</p>
+                </div>
+                <div class="col-xl-6 col-sm-12">
+                    <p class="footer__vsk-years">1992–2022 Страховое акционерное общество «ВСК»</p>
+                </div>
+                <div class="col-xl-6 col-sm-12">
+                    <a href="https://www.vsk.ru/about/central_office" target="_blank" rel="noreferrer" class="footer__address-link">Россия, Москва, 121552, ул. Островная, 4</a><a href="/" class="footer__logo"><img [src]="imageVsk"></a>
+                </div>
+            </div>
+
+        </div>
+        
+    </footer>
+</div>
